@@ -69,7 +69,31 @@ nextTwo.onclick = function(){
 };
 
 // Write anonymous event handler property and function for the third progress button
+nextThree.onclick = function(){
+  // Reveal the startOver button
+  startOver.hidden = false;
+  // Hides the nextThree button
+  nextThree.hidden = true;
 
+  // Change the lyrics
+  document.getElementById('word-one').innerHTML = 'HAP-';
+  document.getElementById('word-two').innerHTML = 'PY';
+  document.getElementById('word-three').innerHTML = 'BIRTH-';
+  document.getElementById('word-four').innerHTML = 'DAY';
+  document.getElementById('word-five').innerHTML = 'TO';
+  document.getElementById('word-six').innerHTML = 'YOU!';
+
+  // Remove the text -END
+  lastLyric.style.display = 'none';
+
+  // Change the musical notes
+  document.getElementById('letter-note-one').innerHTML = 'F';
+  document.getElementById('letter-note-two').innerHTML = 'F';
+  document.getElementById('letter-note-three').innerHTML = 'E';
+  document.getElementById('letter-note-four').innerHTML = 'C';
+  document.getElementById('letter-note-five').innerHTML = 'D';
+  document.getElementById('letter-note-six').innerHTML = 'C';
+};
 
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {
