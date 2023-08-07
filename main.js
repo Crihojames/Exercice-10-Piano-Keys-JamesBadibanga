@@ -9,14 +9,18 @@ keys.forEach(function(key){
 function keyPlay(event){
   event.target.style.backgroundColor = 'blue';
 }
+
+function keyReturn(event){
+  event.target.style.backgroundColor = '';
+}
+
+// Write a named function with event handler properties
 notes.forEach(function(note) {
   note.addEventListener('mousedown', keyPlay);
 });
-
-
-// Write a named function with event handler properties
-
-
+notes.forEach(function(note) {
+  note.addEventListener('mouseup', keyReturn);
+});
 // Write a loop that runs the array elements through the function
 
 
