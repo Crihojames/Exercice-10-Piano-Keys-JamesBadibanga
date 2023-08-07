@@ -47,10 +47,26 @@ nextOne.onclick = function() {
   // Change the musical notes
   document.getElementById('letter-note-five').innerHTML = 'D';
   document.getElementById('letter-note-six').innerHTML = 'C';
-}
+};
 
 // Write anonymous event handler property and function for the second progress button
+nextTwo.onclick = function(){
+  // Reveal the nextThree button
+  nextThree.hidden = false;
+  // Hides the nextTwo button
+  nextTwo.hidden = true;
+  // Change les paroles
+  document.getElementById('word-five').innerHTML = 'DEAR';
+  document.getElementById('word-six').innerHTML = 'FRI-';
 
+  // Display the text -END
+  lastLyric.style.display = 'inline-block';
+  // Change the musical notes
+  document.getElementById('letter-note-three').innerHTML = 'G';
+  document.getElementById('letter-note-four').innerHTML = 'E';
+  document.getElementById('letter-note-five').innerHTML = 'C';
+  document.getElementById('letter-note-six').innerHTML = 'B';
+};
 
 // Write anonymous event handler property and function for the third progress button
 
