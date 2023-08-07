@@ -39,7 +39,15 @@ nextThree.hidden = true;
 startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
-
+nextOne.onclick = function() {
+  // Reveal the nextTwo button
+  nextTwo.hidden = false;
+  // Hides the nextOne button
+  nextOne.hidden = true;
+  // Change the musical notes
+  document.getElementById('letter-note-five').innerHTML = 'D';
+  document.getElementById('letter-note-six').innerHTML = 'C';
+}
 
 // Write anonymous event handler property and function for the second progress button
 
