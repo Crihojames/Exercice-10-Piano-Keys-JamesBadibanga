@@ -5,14 +5,7 @@ keys.forEach(function(key){
   notes.push(document.getElementById(key));
 })
 
-// Write named functions that change the color of the keys below
-function keyPlay(event){
-  event.target.style.backgroundColor = 'blue';
-}
 
-function keyReturn(event){
-  event.target.style.backgroundColor = '';
-}
 
 // Write a named function with event handler properties
 notes.forEach(function(note) {
@@ -84,7 +77,7 @@ nextThree.onclick = function(){
   document.getElementById('word-six').innerHTML = 'YOU!';
 
   // Remove the text -END
-  lastLyric.style.display = 'none';
+  lastLyric.style.display = "none";
 
   // Change the musical notes
   document.getElementById('letter-note-one').innerHTML = 'F';
